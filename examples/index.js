@@ -18,7 +18,7 @@ describe('MockMan example one', function() {
             var date_time = mockman.instance('DateTime').shouldReceive('toString').any().willReturn(dt).getMock();
 
             var result = sut(date_time);
-            assert(result == dt);
+            assert.equal(dt, result);
 
             // clean up
             mockman.close();
