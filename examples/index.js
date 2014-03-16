@@ -1,6 +1,5 @@
 var assert = require('assert'),
 	_ = require('underscore'),
-	mockery = require('mockery'),
     mockman = require('../lib/mockman');
 
 describe('MockMan example one', function() {
@@ -19,7 +18,6 @@ describe('MockMan example one', function() {
 
             var result = sut(date_time);
             assert.equal(dt, result);
-
             // clean up
             mockman.close();
         });
