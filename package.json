@@ -4,7 +4,8 @@
   "description": "MockMan is a simple library to help create test mocks and stubs.",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha --recursive tests/"
+    "test": "node_modules/.bin/mocha --recursive tests/",
+    "examples": "node_modules/.bin/mocha --recursive examples/"
   },
   "repository": {
     "type": "git",
